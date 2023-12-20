@@ -231,6 +231,16 @@
             "rid": "win"
           }
         }
+      },
+      "BackEnd.Infrastructure.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BackEnd.Infrastructure.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BackEnd.Infrastructure.Models.dll": {}
+        }
       }
     }
   },
@@ -619,10 +629,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BackEnd.Infrastructure.Models/1.0.0": {
+      "type": "project",
+      "path": "../BackEnd.Infrastructure.Models/BackEnd.Infrastructure.Models.csproj",
+      "msbuildProject": "../BackEnd.Infrastructure.Models/BackEnd.Infrastructure.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BackEnd.Infrastructure.Models >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -635,11 +651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Vueling\\BackEnd\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "D:\\Vueling\\BackEnd\\BackEnd\\BackEnd.csproj",
+      "projectPath": "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
-      "outputPath": "D:\\Vueling\\BackEnd\\BackEnd\\obj\\",
+      "outputPath": "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -661,7 +677,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd.Infrastructure.Models\\BackEnd.Infrastructure.Models.csproj": {
+              "projectPath": "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd.Infrastructure.Models\\BackEnd.Infrastructure.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

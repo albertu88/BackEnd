@@ -1,0 +1,12 @@
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\bin\Debug\net6.0\BackEnd.Infrastructure.Models.deps.json
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\bin\Debug\net6.0\BackEnd.Infrastructure.Models.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\bin\Debug\net6.0\BackEnd.Infrastructure.Models.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.csproj.AssemblyReference.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.AssemblyInfoInputs.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.AssemblyInfo.cs
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.csproj.CoreCompileInputs.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\refint\BackEnd.Infrastructure.Models.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\BackEnd.Infrastructure.Models.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Infrastructure.Models\obj\Debug\net6.0\ref\BackEnd.Infrastructure.Models.dll

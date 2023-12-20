@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd", "BackEnd\BackEnd.csproj", "{8BF30E55-D4A6-44DE-8964-B8AEDF8464B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd", "BackEnd\BackEnd.csproj", "{8BF30E55-D4A6-44DE-8964-B8AEDF8464B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.DistributedServices", "1.DistributedServices", "{49EF1985-7FDA-40D4-90C6-8E6862DC9B4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{FCBB47CC-F9E3-4BC3-98AE-BCD67199EB1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{9EC07335-0378-47F4-B5E1-4B01BE4EF27D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infrastructure", "{C1966331-8E46-4643-A621-AF595A00FA50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.Infrastructure.Models", "BackEnd.Infrastructure.Models\BackEnd.Infrastructure.Models.csproj", "{96CF5A0D-3557-4A64-8262-E259AEF6E315}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,17 @@ Global
 		{8BF30E55-D4A6-44DE-8964-B8AEDF8464B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BF30E55-D4A6-44DE-8964-B8AEDF8464B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BF30E55-D4A6-44DE-8964-B8AEDF8464B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96CF5A0D-3557-4A64-8262-E259AEF6E315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CF5A0D-3557-4A64-8262-E259AEF6E315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CF5A0D-3557-4A64-8262-E259AEF6E315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CF5A0D-3557-4A64-8262-E259AEF6E315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BF30E55-D4A6-44DE-8964-B8AEDF8464B0} = {49EF1985-7FDA-40D4-90C6-8E6862DC9B4D}
+		{96CF5A0D-3557-4A64-8262-E259AEF6E315} = {C1966331-8E46-4643-A621-AF595A00FA50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3327299A-F4C8-455F-8FE8-65A5323E6754}
