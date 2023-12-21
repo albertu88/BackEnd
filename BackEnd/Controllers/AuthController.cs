@@ -1,4 +1,6 @@
 ﻿using BackEnd.Infrastructure.Models.DTO;
+using BackEnd.Infrastructure.Models.Enum;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -21,10 +23,16 @@ namespace BackEnd.Controllers
             {
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mySecretKey@12345"));
                 var signCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+
+                var claims = new List<Claim>   {
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Role, Role.Manager.ToString())
+            };
+
                 var tokenOptions = new JwtSecurityToken(
                     issuer: "https://localhost:7090",
                     audience: "https://localhost:7090",
-                    claims: new List<Claim>(),
+                    claims: claims,
                     expires: DateTime.Now.AddMinutes(5),
                     signingCredentials: signCredentials
                     );

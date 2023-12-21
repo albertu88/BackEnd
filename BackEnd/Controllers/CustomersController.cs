@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using BackEnd.Infrastructure.Models.Enum;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackEnd.Controllers
@@ -7,7 +8,7 @@ namespace BackEnd.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        [HttpGet, Authorize]
+        [HttpGet, Authorize(Roles = nameof(Role.Manager))]
         public IEnumerable<string> Get()
         {
             return new string[] { "John Doe", "Jane Doe" };

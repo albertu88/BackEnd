@@ -55,6 +55,8 @@ D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Swashbuckle.AspNet
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Infrastructure.Models.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Infrastructure.Models.pdb
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
@@ -76,5 +78,3 @@ D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
-D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Infrastructure.Models.dll
-D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Infrastructure.Models.pdb
