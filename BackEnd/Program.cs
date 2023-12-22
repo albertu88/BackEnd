@@ -1,4 +1,6 @@
+using BackEnd.Infrastructure.Models.Model;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -31,6 +33,9 @@ builder.Services.AddCors(options =>
         .AllowAnyMethod();
     });
 });
+
+builder.Services.AddDbContext<UserContext>(opts =>
+    opts.UseNpgsql(builder.Configuration["ConnectionString:UserDB"]));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

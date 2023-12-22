@@ -1,5 +1,6 @@
 ﻿using BackEnd.Infrastructure.Models.DTO;
 using BackEnd.Infrastructure.Models.Enum;
+using BackEnd.Infrastructure.Models.Model;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;

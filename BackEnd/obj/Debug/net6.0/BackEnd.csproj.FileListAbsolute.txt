@@ -78,3 +78,10 @@ D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Npgsql.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
