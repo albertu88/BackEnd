@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BackEnd.Applicaton.Services\BackEnd.Applicaton.Services.csproj" />
     <ProjectReference Include="..\BackEnd.Infrastructure.Models\BackEnd.Infrastructure.Models.csproj" />
   </ItemGroup>
 

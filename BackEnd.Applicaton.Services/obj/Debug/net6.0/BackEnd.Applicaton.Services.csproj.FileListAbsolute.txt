@@ -1,0 +1,12 @@
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Applicaton.Services.deps.json
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Applicaton.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Applicaton.Services.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.csproj.AssemblyReference.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.AssemblyInfoInputs.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.AssemblyInfo.cs
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.csproj.CoreCompileInputs.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\refint\BackEnd.Applicaton.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\ref\BackEnd.Applicaton.Services.dll

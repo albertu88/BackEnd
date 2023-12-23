@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackEnd.Infrastructure.Models.DTO
+namespace BackEnd.Infrastructure.Models.Model
 {
-    public class AuthenticatedResponse
+    public class TokenApiModel
     {
-        public string? Token { get; set; }
+        public string? AccessToken { get; set; }
         public string? RefreshToken { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using BackEnd.Infrastructure.Models.DTO;
+﻿using BackEnd.Applicaton.Services.Contracts;
+using BackEnd.Infrastructure.Models.DTO;
 using BackEnd.Infrastructure.Models.Enum;
 using BackEnd.Infrastructure.Models.Model;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
@@ -14,36 +15,48 @@ namespace BackEnd.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginModel user)
+        private readonly UserContext _userContext;
+        private readonly ITokenService _tokenService;
+
+        public AuthController(UserContext userContext, ITokenService tokenService)
         {
-            if (user is null)
+            _userContext = userContext;
+            _tokenService = tokenService;
+        }
+
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] LoginModel loginModel)
+        {
+            if (loginModel is null)
                 return BadRequest("Invalid client request");
 
-            if (user.UserName == "albertico" && user.Password == "albertico")
-            {
-                var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mySecretKey@12345"));
-                var signCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
-                var claims = new List<Claim>   {
-                new Claim(ClaimTypes.Name, user.UserName),
+            var user = _userContext.LoginModels?.Where(u => u.UserName == loginModel.UserName && u.Password == loginModel.Password).FirstOrDefault();
+
+            if (user is null)
+                return Unauthorized();
+
+            var claims = new List<Claim>   {
+                new Claim(ClaimTypes.Name, loginModel.UserName),
                 new Claim(ClaimTypes.Role, Role.Manager.ToString())
-            };
+                };
 
-                var tokenOptions = new JwtSecurityToken(
-                    issuer: "https://localhost:7090",
-                    audience: "https://localhost:7090",
-                    claims: claims,
-                    expires: DateTime.Now.AddMinutes(5),
-                    signingCredentials: signCredentials
-                    );
 
-                var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+            var accessToken = _tokenService.GenerateAccessToken(claims);
+            var refreshToken = _tokenService.GenerateRefreshToken();
 
-                return Ok(new AuthenticatedResponse { Token = tokenString });
-            }
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime =DateTime.UtcNow.AddDays(7);
 
-            return Unauthorized();
+            _userContext.SaveChanges();
+
+                return Ok(new AuthenticatedResponse 
+                { 
+                    Token = accessToken,
+                    RefreshToken = refreshToken
+                
+                });
+                                 
 
         }
     }

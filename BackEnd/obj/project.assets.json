@@ -583,6 +583,19 @@
           }
         }
       },
+      "BackEnd.Applicaton.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.IdentityModel.Tokens.Jwt": "6.10.0"
+        },
+        "compile": {
+          "bin/placeholder/BackEnd.Applicaton.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BackEnd.Applicaton.Services.dll": {}
+        }
+      },
       "BackEnd.Infrastructure.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1432,6 +1445,11 @@
         "version.txt"
       ]
     },
+    "BackEnd.Applicaton.Services/1.0.0": {
+      "type": "project",
+      "path": "../BackEnd.Applicaton.Services/BackEnd.Applicaton.Services.csproj",
+      "msbuildProject": "../BackEnd.Applicaton.Services/BackEnd.Applicaton.Services.csproj"
+    },
     "BackEnd.Infrastructure.Models/1.0.0": {
       "type": "project",
       "path": "../BackEnd.Infrastructure.Models/BackEnd.Infrastructure.Models.csproj",
@@ -1440,6 +1458,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BackEnd.Applicaton.Services >= 1.0.0",
       "BackEnd.Infrastructure.Models >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0",
@@ -1484,6 +1503,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd.Applicaton.Services\\BackEnd.Applicaton.Services.csproj": {
+              "projectPath": "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd.Applicaton.Services\\BackEnd.Applicaton.Services.csproj"
+            },
             "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd.Infrastructure.Models\\BackEnd.Infrastructure.Models.csproj": {
               "projectPath": "D:\\Vueling\\MyPersonalProject\\BackEnd\\BackEnd.Infrastructure.Models\\BackEnd.Infrastructure.Models.csproj"
             }

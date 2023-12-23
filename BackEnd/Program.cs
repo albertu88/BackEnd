@@ -1,3 +1,5 @@
+using BackEnd.Applicaton.Services.Contracts;
+using BackEnd.Applicaton.Services.Implementations;
 using BackEnd.Infrastructure.Models.Model;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -36,6 +38,8 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddDbContext<UserContext>(opts =>
     opts.UseNpgsql(builder.Configuration["ConnectionString:UserDB"]));
+
+builder.Services.AddTransient<ITokenService, TokenService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
