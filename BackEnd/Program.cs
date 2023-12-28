@@ -1,7 +1,12 @@
 using BackEnd.Applicaton.Services.Contracts;
 using BackEnd.Applicaton.Services.Implementations;
+using BackEnd.Domain.Services.Contracts;
+using BackEnd.Domain.Services.Implementations;
 using BackEnd.Infrastructure.Models.Model;
+using BackEnd.Infrastructure.Models.Repository;
+using BackEnd.Infrastructure.Models.RepositoryContracts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -39,7 +44,19 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<UserContext>(opts =>
     opts.UseNpgsql(builder.Configuration["ConnectionString:UserDB"]));
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddTransient<IUserDomainService, UserDomainService>();
+builder.Services.AddTransient<IUserService, UserService>();
+
 builder.Services.AddTransient<ITokenService, TokenService>();
+
+
+
+
+
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

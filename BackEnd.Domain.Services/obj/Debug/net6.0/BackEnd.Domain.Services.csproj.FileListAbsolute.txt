@@ -1,0 +1,15 @@
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\bin\Debug\net6.0\BackEnd.Domain.Services.deps.json
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\bin\Debug\net6.0\BackEnd.Domain.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\bin\Debug\net6.0\BackEnd.Domain.Services.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\bin\Debug\net6.0\BackEnd.Infrastructure.Models.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\bin\Debug\net6.0\BackEnd.Infrastructure.Models.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.csproj.AssemblyReference.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.AssemblyInfoInputs.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.AssemblyInfo.cs
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.csproj.CoreCompileInputs.cache
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.csproj.CopyComplete
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\refint\BackEnd.Domain.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\BackEnd.Domain.Services.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Domain.Services\obj\Debug\net6.0\ref\BackEnd.Domain.Services.dll

@@ -87,3 +87,5 @@ D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Applicaton.Services.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Applicaton.Services.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Domain.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.Domain.Services.pdb

@@ -587,6 +587,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BackEnd.Domain.Services": "1.0.0",
+          "BackEnd.Infrastructure.Models": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.10.0"
         },
         "compile": {
@@ -594,6 +596,19 @@
         },
         "runtime": {
           "bin/placeholder/BackEnd.Applicaton.Services.dll": {}
+        }
+      },
+      "BackEnd.Domain.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BackEnd.Infrastructure.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BackEnd.Domain.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BackEnd.Domain.Services.dll": {}
         }
       },
       "BackEnd.Infrastructure.Models/1.0.0": {
@@ -1449,6 +1464,11 @@
       "type": "project",
       "path": "../BackEnd.Applicaton.Services/BackEnd.Applicaton.Services.csproj",
       "msbuildProject": "../BackEnd.Applicaton.Services/BackEnd.Applicaton.Services.csproj"
+    },
+    "BackEnd.Domain.Services/1.0.0": {
+      "type": "project",
+      "path": "../BackEnd.Domain.Services/BackEnd.Domain.Services.csproj",
+      "msbuildProject": "../BackEnd.Domain.Services/BackEnd.Domain.Services.csproj"
     },
     "BackEnd.Infrastructure.Models/1.0.0": {
       "type": "project",

@@ -297,10 +297,20 @@
       "System.Security.Cryptography.Cng/4.5.0": {},
       "BackEnd.Applicaton.Services/1.0.0": {
         "dependencies": {
+          "BackEnd.Domain.Services": "1.0.0",
+          "BackEnd.Infrastructure.Models": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.10.0"
         },
         "runtime": {
           "BackEnd.Applicaton.Services.dll": {}
+        }
+      },
+      "BackEnd.Domain.Services/1.0.0": {
+        "dependencies": {
+          "BackEnd.Infrastructure.Models": "1.0.0"
+        },
+        "runtime": {
+          "BackEnd.Domain.Services.dll": {}
         }
       },
       "BackEnd.Infrastructure.Models/1.0.0": {
@@ -573,6 +583,11 @@
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },
     "BackEnd.Applicaton.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BackEnd.Domain.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

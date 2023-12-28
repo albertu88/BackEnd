@@ -10,3 +10,8 @@ D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\refint\BackEnd.Applicaton.Services.dll
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.pdb
 D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\ref\BackEnd.Applicaton.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Domain.Services.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Infrastructure.Models.dll
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Domain.Services.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\bin\Debug\net6.0\BackEnd.Infrastructure.Models.pdb
+D:\Vueling\MyPersonalProject\BackEnd\BackEnd.Applicaton.Services\obj\Debug\net6.0\BackEnd.Applicaton.Services.csproj.CopyComplete

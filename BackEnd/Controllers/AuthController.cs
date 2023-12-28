@@ -15,29 +15,29 @@ namespace BackEnd.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly UserContext _userContext;
+        private readonly IUserService _userService;
         private readonly ITokenService _tokenService;
 
-        public AuthController(UserContext userContext, ITokenService tokenService)
+        public AuthController(IUserService userService, ITokenService tokenService)
         {
-            _userContext = userContext;
+            _userService = userService;
             _tokenService = tokenService;
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginModel loginModel)
+        public async Task<IActionResult> Login([FromBody] LoginModel loginModel)
         {
             if (loginModel is null)
                 return BadRequest("Invalid client request");
 
 
-            var user = _userContext.LoginModels?.Where(u => u.UserName == loginModel.UserName && u.Password == loginModel.Password).FirstOrDefault();
+            var user = await _userService.getLoginModel(loginModel.UserName, loginModel.Password);
 
             if (user is null)
                 return Unauthorized();
 
             var claims = new List<Claim>   {
-                new Claim(ClaimTypes.Name, loginModel.UserName),
+                new Claim(ClaimTypes.Name, user.UserName),
                 new Claim(ClaimTypes.Role, Role.Manager.ToString())
                 };
 
@@ -48,14 +48,17 @@ namespace BackEnd.Controllers
             user.RefreshToken = refreshToken;
             user.RefreshTokenExpiryTime =DateTime.UtcNow.AddDays(7);
 
-            _userContext.SaveChanges();
+            var response = await _userService.updateLoginModel(user);
 
-                return Ok(new AuthenticatedResponse 
-                { 
-                    Token = accessToken,
-                    RefreshToken = refreshToken
-                
-                });
+            if (response == false)
+                return Unauthorized();
+
+            return Ok(new AuthenticatedResponse 
+            { 
+                Token = accessToken,
+                RefreshToken = refreshToken
+            
+            });
                                  
 
         }
